@@ -1,0 +1,111 @@
+.introducao{
+max-width: 1200px;
+padding: 40px 20px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 40px;
+margin-top: 50px;
+}
+
+.introducao img{
+max-width: 100%;
+display: block;
+}
+
+.introducao h1{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4rem;
+  font-weight:bold;
+  margin-left: 100px;
+  line-height: 1.3;
+  position:relative;
+}
+
+.texto1{
+font-family: 'Fira Sans', sans-serif;
+color: #A31EAF;
+}
+
+.introducao p{
+text-align: left;
+font-weight: bolder;
+margin-left: 100px;
+margin-top: 20px;
+
+}
+
+h1::before{
+  content: "";
+  display: block;
+  height: 330px;
+  width: 19px;
+  background: url("/img/retangulo-separacao.svg") no-repeat center;
+  position: absolute;
+  left: -60px;
+  bottom: 40px;
+  z-index: -1;
+  }
+
+.introducao .icon1{
+color: #FFCA28;
+
+}
+
+.introducao .ponto{
+color: #141414;
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+.introducao{
+  grid-template-columns: 1fr;
+  
+}
+.introducao h1{
+font-size: 3.5rem;
+margin-top: 80px;
+}
+h1::before{
+  content: "";
+  display: block;
+  height: 45px;
+  width: 19px;
+  background: url("/img/retangulo-separacao.svg") no-repeat center;
+  position: absolute;
+  left: -25px;
+  bottom: 300px;
+  top: 10px;
+  z-index: -1;
+}
+.introducao img {
+margin-left: 215px;
+}
+
+}
+
+@media(max-width:450px){
+  .introducao{
+   grid-template-columns: 1fr;
+   margin-top: 10px;
+  }
+  .introducao h1{
+    font-size: 1.5rem;
+    }
+    h1::before{
+  height: 200px;
+   top: -13px;
+   }
+   .introducao img{
+   margin-left: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

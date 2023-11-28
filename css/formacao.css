@@ -1,0 +1,192 @@
+.formacao{
+background-color: #141414;
+color:aliceblue;
+}
+
+.formacao-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.formacion{
+    font-size: 8rem;
+    line-height: 1.2;
+    word-break:break-all;
+    max-width: 5ch;
+    text-transform: uppercase;
+    color:#c2c1c1;
+    
+}
+
+.texto-formacao{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 50ch;
+  color: #a3a3a3;
+}
+
+.texto-formacao strong {
+  color: #fff;
+}
+
+.faculdade-lista{
+flex:1;
+display: flex;
+flex-flow: row wrap;
+gap: 30px;
+}
+
+.faculdade{
+background-color: #000;
+border-radius: 4px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.faculdade-tipo{
+font-size: 0.875rem;
+text-transform: uppercase;
+color:#a3a3a3;
+margin-bottom: 10px;
+}
+
+.faculdade-curso{
+font-size: 1.125rem;
+line-height: 1.4;
+margin-bottom: 40px;
+position: relative;
+
+}
+.faculdade-curso::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color:  #A31EAF;
+  position: absolute;
+  top: -75px;
+  left: -20px;
+  
+  }
+
+  .formacao-extra{
+    margin-top: 100px;
+    }
+
+  .cursos{
+  margin-bottom: 60px;
+  }
+
+  .formacao-extra h3{
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+  }
+  .formacao-extra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  }
+
+  .formacao-extra span{
+  color:#8f8f8f;
+  }
+
+  .cursos li{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  }
+
+.lista-cursos{
+display: flex;
+flex-flow: column wrap;
+gap: 5px;
+}
+
+.formacao-extra h3::before{
+  content: "";
+  width: 29px;
+   height: 30px;
+   display: block;
+   color:#A31EAF;
+   position: absolute;
+ left: -40px;
+ top: -3px;
+}
+
+.cursos h3::before{
+  background: url('/img/LIVRO.svg') no-repeat center center;
+}
+.idiomas h3::before{
+  background: url('/img/idioma.svg') no-repeat center center;
+}
+
+@media (max-width:450px) {
+
+  .formacao-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  }
+  .formacion{
+      font-size: 3rem;
+      text-align: center;
+      text-transform: capitalize;
+      max-width: initial;
+    }
+    .formacao-extra h3{
+      margin-left: 40px;
+    }
+
+    .texto-formacao{
+      font-size: 1.5rem;
+      line-height: 1.33;
+      margin-bottom: 60px;
+      max-width: 40ch;
+      text-align: center;
+}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+  .formacao-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    }
+    .formacion{
+        font-size: 3rem;
+        text-align: center;
+        text-transform: capitalize;
+        max-width: initial;
+      }
+      .formacao-extra h3{
+        margin-left: 40px;
+      }
+  
+      .texto-formacao{
+        font-size: 1.5rem;
+        line-height: 1.33;
+        margin-bottom: 60px;
+        max-width: 70ch;
+        text-align: center;
+        
+  }
+  .faculdade-lista{
+    justify-content:center;
+   
+    }
+  }
+  

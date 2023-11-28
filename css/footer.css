@@ -1,0 +1,107 @@
+
+.footer{
+background-color: #000000;
+}
+
+.footer-container{
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap:100px;
+padding: 120px 20px 60px 20px;
+align-items: center;
+
+}
+
+.footer-texto{
+font-size: 1.5rem;
+line-height: 1.33;
+color: #cccccc;
+max-width: 30ch;
+position: relative;
+}
+
+.footer-texto::after{
+content: "";
+display: block;
+width: 30px;
+height: 30px;
+position: absolute; 
+background: url('/img/TCHAU.svg') no-repeat center;
+top: 95px;
+left: 115px;
+}
+
+.footer-contato li{
+font-weight: bold;
+font-size: 2rem;
+line-height: 1.1;
+color: #fff;
+margin-bottom: 30px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+.footer-contato li a{
+color:#fff;
+}
+
+.footer-copy{
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  text-align: center;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .footer-texto::after{
+   display: none;
+  }
+
+  .footer-container{
+   display:grid;
+  grid-template-columns: 1fr;
+}
+.footer-texto{
+  font-size: 1.7rem;
+  line-height: 1.33;
+  color: #cccccc;
+  max-width:45ch;
+  text-align: center;
+  }
+  .footer-contato li{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width:450px) {
+  .footer-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+ }
+.footer-texto{
+  font-size: 1.2rem;
+  line-height: 1.33;
+  color: #cccccc;
+  max-width:35ch;
+  text-align:center;
+  margin-top: 20px;
+ 
+  }
+  
+  .footer-texto::after{
+  display: none;
+  }
+  .footer-contato li{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer-copy{
+    font-size: 1rem;
+}
+}
